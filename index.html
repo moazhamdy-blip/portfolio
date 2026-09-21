@@ -1,110 +1,162 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Moaz Hamdy Portfolio</title>
+<title>Moaz Hamdy | Electrical MEP Design Engineer</title>
+<meta name="description" content="Portfolio of Moaz Hamdy, Electrical MEP Design Engineer: power, lighting, low current, KNX and BIM.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fff;--fg:#1a1d21;--mut:#5b636d;--line:#dde1e6;--acc:#1f4e79;--soft:#f5f7f9}
-@media(prefers-color-scheme:dark){:root{--bg:#111418;--fg:#e8eaed;--mut:#9aa3ad;--line:#2b3138;--acc:#7fb1e0;--soft:#181c21}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,Segoe UI,Arial,sans-serif}
-.w{max-width:1000px;margin:0 auto;padding:0 16px}
-header.cover{padding:72px 0 40px;border-bottom:1px solid var(--line)}
-h1{font-size:44px;margin:0;letter-spacing:.5px}h2{font-size:26px;margin:56px 0 8px;color:var(--acc)}h3{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:24px 0 6px}
-.sub{color:var(--acc);font-size:19px;margin:6px 0}.mut{color:var(--mut)}
-table{border-collapse:collapse;width:100%;font-size:14px}td,th{border-top:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{width:150px;color:var(--mut);font-weight:600}
-.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0}.flow span{background:var(--soft);border:1px solid var(--line);padding:4px 10px;border-radius:4px;font-size:13px}.flow i{color:var(--mut);font-style:normal}
-figure{margin:16px 0}figure img{max-width:100%;border:1px solid var(--line)}figcaption{font-size:13px;color:var(--mut);margin-top:4px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.grid div{background:var(--soft);border:1px solid var(--line);padding:12px}
-.nc{background:#fff3cd;color:#664d03;padding:0 4px;border-radius:2px;font-size:.85em}
-ul{padding-left:20px}nav a{color:var(--acc);margin-right:14px;font-size:14px}
-footer{margin:64px 0 40px;color:var(--mut);font-size:13px}
-</style></head><body><div class="w">
-<header class="cover"><h1>MOAZ HAMDY</h1>
-<div class="sub">Electrical MEP Design Engineer</div>
-<div class="mut">Lighting | Electrical Design | Low Current | KNX | BIM</div>
-<p class="mut">Cairo, Egypt · moazhamdy1112@gmail.com · linkedin.com/in/moaz-hamdy112</p>
-<nav><a href="#about">About</a><a href="#x1">X1 Mall</a><a href="#okasa">OKASA Mall</a><a href="#rosalie">Rosalie Facade</a><a href="#knx">Armada KNX</a><a href="#bim">BIM Villa</a><a href="#effect">Villa Exterior</a><a href="#dialux">DIALux</a></nav></header>
+:root{--bg:#fff;--fg:#0f1720;--mut:#5b6773;--line:#e3e8ee;--soft:#f5f7fa;--acc:#0b5cab;--acc2:#12a5c6;--dark:#08131f;--dfg:#e8eef5;--sh:0 1px 2px rgba(15,23,32,.05),0 8px 24px rgba(15,23,32,.06)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 Inter,"Segoe UI",system-ui,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--acc)}.w{max-width:1080px;margin:0 auto;padding:0 24px}
+::selection{background:var(--acc);color:#fff}
 
-<h2 id="about">About</h2>
-<p>Electrical MEP design engineer covering power, lighting, low-current and smart-building systems for malls, towers, offices and villas in Egypt (New Administrative Capital) and Saudi Arabia. Work spans early coordination, calculation (ETAP), SLDs and panel schedules, low-current risers, DIALux studies and KNX automation drawings. KNX Partner certified (Basic, Advanced, Advanced HVAC).</p>
-<h3>Technical expertise</h3>
+nav.top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.88);backdrop-filter:saturate(1.6) blur(12px);border-bottom:1px solid var(--line)}
+nav.top .w{display:flex;align-items:center;justify-content:space-between;height:60px;gap:20px}
+nav.top b{letter-spacing:.2em;font-size:13px;font-weight:700;white-space:nowrap}
+nav.top div{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}nav.top div::-webkit-scrollbar{display:none}
+nav.top a{color:var(--mut);text-decoration:none;font-size:13.5px;font-weight:500;padding:6px 12px;border-radius:99px;white-space:nowrap;transition:.2s}
+nav.top a:hover{color:var(--acc);background:var(--soft)}nav.top a.on{color:#fff;background:var(--acc)}
+
+.hero{position:relative;overflow:hidden;background:radial-gradient(1200px 500px at 85% -10%,rgba(18,165,198,.28),transparent 60%),radial-gradient(900px 500px at 0% 110%,rgba(11,92,171,.35),transparent 60%),var(--dark);color:var(--dfg);padding:112px 0 96px}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(180deg,#000 30%,transparent 100%)}
+.hero .w{position:relative}
+.hero .k{display:inline-block;font-family:"JetBrains Mono",monospace;letter-spacing:.18em;font-size:12px;color:#7fd3e6;text-transform:uppercase;border:1px solid rgba(127,211,230,.35);padding:5px 12px;border-radius:99px}
+.hero h1{font-size:clamp(42px,7vw,76px);line-height:1.02;margin:22px 0 10px;letter-spacing:-.02em;font-weight:700;background:linear-gradient(180deg,#fff,#b9c9db);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .t{font-size:clamp(19px,2.6vw,26px);color:#d7e2ee;margin:0 0 6px;font-weight:500}.hero p.s{color:#8fa3b8;margin:0 0 34px;letter-spacing:.06em}
+.hero .c{display:flex;flex-wrap:wrap;gap:8px 26px;font-size:14px;color:#c4d2e0}.hero .c a{color:#c4d2e0;text-decoration:none;border-bottom:1px solid rgba(196,210,224,.3)}.hero .c a:hover{color:#fff}
+.btn{display:inline-block;margin:30px 12px 0 0;padding:12px 24px;border:1px solid rgba(255,255,255,.28);color:#fff!important;text-decoration:none;border-radius:6px;font-size:14px;font-weight:600;transition:.2s}
+.btn:hover{transform:translateY(-2px);border-color:#fff}.btn.p{background:linear-gradient(135deg,var(--acc),var(--acc2));border-color:transparent;box-shadow:0 8px 24px rgba(18,165,198,.35)}
+
+section{padding:88px 0;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin:0 0 10px;display:flex;align-items:center;gap:10px}
+.eyebrow:before{content:"";width:28px;height:2px;background:var(--acc)}
+section h3.big{font-size:clamp(26px,3.6vw,38px);margin:0 0 18px;line-height:1.15;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.card{position:relative;border:1px solid var(--line);padding:24px;background:#fff;border-radius:10px;transition:.25s;box-shadow:var(--sh)}
+.card:before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:3px;background:linear-gradient(var(--acc),var(--acc2));border-radius:0 3px 3px 0}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(11,92,171,.14)}
+.card b{display:block;margin-bottom:6px;font-size:16.5px}.card span{color:var(--mut);font-size:14.5px}
+
+.case{padding:88px 0;border-bottom:1px solid var(--line)}.case.alt{background:var(--soft)}
+.no{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.18em;color:var(--acc)}
+.case h3{font-size:clamp(28px,4vw,42px);margin:6px 0 14px;line-height:1.12;letter-spacing:-.015em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}.chips span{border:1px solid var(--line);background:#fff;border-radius:99px;padding:4px 14px;font-size:13px;color:#33404d;font-weight:500}
+.lead{font-size:18px;max-width:800px;margin:0 0 26px;color:#2a3542}
+.steps{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 28px;counter-reset:s}
+.steps span{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:6px;padding:7px 14px;font-size:13px;font-weight:500;box-shadow:0 1px 2px rgba(15,23,32,.04)}
+.steps span:before{content:counter(s,decimal-leading-zero);font-family:"JetBrains Mono",monospace;color:var(--acc2);margin-right:8px;font-size:11.5px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:36px}@media(max-width:780px){.two{grid-template-columns:1fr}}
+h4{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin:0 0 10px;font-weight:500}
+ul{margin:0 0 18px;padding-left:0;list-style:none}li{position:relative;margin:7px 0;padding-left:20px;font-size:15px}
+li:before{content:"";position:absolute;left:0;top:.72em;width:8px;height:2px;background:var(--acc2)}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;margin-top:28px}
+figure{margin:0}figure img,figure video{width:100%;height:auto;border:1px solid var(--line);background:#fff;display:block;border-radius:8px;box-shadow:var(--sh);transition:.25s}
+figure img{cursor:zoom-in}figure img:hover{transform:scale(1.015);box-shadow:0 16px 40px rgba(11,92,171,.18)}figure video{max-height:560px;background:#000}
+figcaption{font-size:13px;color:var(--mut);margin-top:10px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+td,th{padding:12px 16px;border-top:1px solid var(--line);text-align:left;vertical-align:top}tr:first-child td,tr:first-child th{border-top:0}th{color:var(--mut);font-weight:600;width:190px;background:var(--soft)}
+.lb{position:fixed;inset:0;background:rgba(6,10,15,.94);display:none;align-items:center;justify-content:center;z-index:50;cursor:zoom-out;padding:24px}.lb img{max-width:100%;max-height:100%;background:#fff;border-radius:4px}.lb.on{display:flex}
+footer{background:var(--dark);color:#c4d2e0;padding:56px 0;font-size:14px}footer a{color:#c4d2e0}footer b{color:#fff;font-size:16px}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media(max-width:600px){.hero{padding:72px 0 64px}section,.case{padding:56px 0}nav.top b{display:none}}
+@media print{nav.top,.lb{display:none}.rv{opacity:1;transform:none}}
+</style></head><body>
+<nav class="top"><div class="w"><b>MOAZ HAMDY</b><div><a href="#expertise">Profile</a><a href="#x1">X1 Mall</a><a href="#okasa">OKASA Mall</a><a href="#rosalie">Rosalie Hotel</a><a href="#knx">Armada KNX</a><a href="#bim">Villa BIM</a><a href="#lighting">Lighting</a></div></div></nav>
+
+<header class="hero"><div class="w">
+<span class="k">Engineering Portfolio</span>
+<h1>Moaz Hamdy</h1>
+<p class="t">Electrical MEP Design Engineer</p>
+<p class="s">POWER · LIGHTING · LOW CURRENT · KNX · BIM</p>
+<div class="c"><span>Cairo, Egypt</span><a href="mailto:moazhamdy1112@gmail.com">moazhamdy1112@gmail.com</a><a href="https://www.linkedin.com/in/moaz-hamdy112">linkedin.com/in/moaz-hamdy112</a></div>
+<a class="btn p" href="CV_Moaz_Hamdy.pdf">Download CV</a><a class="btn" href="#x1">View projects</a>
+</div></header>
+
+<section id="expertise"><div class="w rv">
+<p class="eyebrow">Profile</p><h3 class="big">Design, coordination, calculation and documentation</h3>
+<p class="lead">Electrical MEP design engineer delivering complete design packages for malls, towers, offices and villas in Egypt (New Administrative Capital) and Saudi Arabia. Work runs from early architectural and mechanical coordination through ETAP studies, single line diagrams, panel schedules, low-current risers, DIALux studies and KNX automation drawings. KNX Partner certified: Basic, Advanced and Advanced HVAC.</p>
 <div class="grid">
-<div><b>Electrical Power</b><br>Power, mechanical power, cable routing, SLD, panel schedules, earthing, EV, PV</div>
-<div><b>Lighting</b><br>DIALux Evo, indoor, outdoor, facade</div>
-<div><b>Low Current</b><br>Telecom, CCTV, fire alarm, parking, disabled alarm, access control, sound</div>
-<div><b>KNX / Smart Building</b><br>KNX design, automation shop drawings, ETS</div>
-<div><b>BIM / Revit</b><br>Revit MEP, Navisworks clash detection</div>
-<div><b>ETAP</b><br>Voltage drop, short circuit (IEC 60909)</div>
-</div>
+<div class="card"><b>Electrical Power</b><span>Lighting and power layouts, mechanical power, cable routing, LV/MV SLD, panel schedules, earthing, EV charging, PV</span></div>
+<div class="card"><b>Lighting Design</b><span>DIALux Evo studies: interior, exterior and facade lighting, lux and uniformity analysis</span></div>
+<div class="card"><b>Low Current</b><span>Telecom, CCTV, fire alarm, parking, disabled alarm, access control, sound system, risers</span></div>
+<div class="card"><b>KNX / Smart Building</b><span>KNX design, automation shop drawings, riser diagrams, ETS</span></div>
+<div class="card"><b>BIM / Revit MEP</b><span>Electrical modeling, schedules, sheets, Navisworks coordination and clash resolution</span></div>
+<div class="card"><b>Analysis</b><span>ETAP voltage drop and IEC 60909 short circuit, generator sizing</span></div>
+</div></div></section>
 
-<h2 id="x1">Case study 1 — X1 Mall, New Administrative Capital</h2>
+<div id="x1" class="case"><div class="w rv">
+<div class="no">CASE STUDY 01</div><h3>X1 Mall</h3>
+<div class="chips"><span>New Administrative Capital, Egypt</span><span>Retail, multi-level with basements</span><span>Electrical + Low Current</span><span>AutoCAD · ETAP · Revit MEP</span></div>
+<p class="lead">Complete electrical and low-current design set for a multi-level mall, from early coordination of electrical rooms and shafts to calculations, single line diagrams and riser diagrams.</p>
+<h4>Design workflow</h4>
+<div class="steps"><span>Architectural coordination</span><span>Electrical room and shaft planning</span><span>Lighting and power</span><span>Mechanical power</span><span>Cable routing</span><span>ETAP: voltage drop and short circuit</span><span>SLD and panel schedules</span><span>Low current</span><span>Riser diagrams</span></div>
+<div class="two"><div><h4>Electrical</h4><ul><li>Lighting, power and mechanical power plans (Basement 3 to Roof)</li><li>Cable routing, EV charging, earthing and lightning, PV</li><li>LV single line diagrams (3 sheets) and MV SLD</li><li>Panel schedules with voltage drop and short circuit</li><li>RMU and transformer room sections, MV routing plan</li></ul></div>
+<div><h4>Calculations and low current</h4><ul><li>ETAP study: 43 buses, 2 transformers, 1 generator (IEC 60909)</li><li>Busway and breaker sizing sheets; example: 2000 kVA transformer, 6% impedance, 4000 A busway</li><li>Telecom, CCTV, fire alarm, parking, disabled system, access control, sound</li><li>Low-current cable routing and five riser diagrams</li></ul></div></div>
+<div class="gal"><figure><img src="assets/x1_lighting_ground_c.png" alt="Ground floor lighting plan"><figcaption>Ground floor lighting plan (EL-103)</figcaption></figure><figure><img src="assets/x1_sld_lv100_c.png" alt="LV single line diagram"><figcaption>LV single line diagram, part 1 (LV-SLD-100)</figcaption></figure></div>
+</div></div>
+
+<div id="okasa" class="case alt"><div class="w rv">
+<div class="no">CASE STUDY 02</div><h3>OKASA Mall</h3>
+<div class="chips"><span>New Administrative Capital, Egypt</span><span>Retail, ground plus three floors</span><span>Electrical + Low Current</span><span>AutoCAD · ETAP</span></div>
+<p class="lead">Full electrical and low-current design with a documented load study, MV/LV distribution, standby generation and authority-ready deliverables.</p>
+<div class="two"><div><h4>Design basis</h4><ul><li>Total designed load: 5,656.1 kVA</li><li>Three dry-type transformers: 2 × 2000 kVA and 1 × 2500 kVA, 22/0.4 kV</li><li>Three RMUs (2+1, 2+1, 3+1)</li><li>1400 kW standby generator serving lighting, smoke extract and stair pressurization EMCC panels, lifts and pumps</li><li>ETAP generator sizing report; lightning protection calculation (IEC)</li></ul></div>
+<div><h4>Deliverables</h4><ul><li>Lighting, power, mechanical power, cable routing, earthing and lightning, EV, PV</li><li>RMU, transformer and MDB room drawings and sections</li><li>LV SLD parts 1 to 3 and MV SLD</li><li>Telecom, CCTV, fire alarm and matrix, access control, parking, disabled, sound</li><li>Low-current checklist: 741 ONT units, 860 CCTV outlets, 741 smart meters</li></ul></div></div>
+<div class="gal"><figure><img src="assets/okasa_mvsld_c.png" alt="MV single line diagram"><figcaption>MV single line diagram</figcaption></figure><figure><img src="assets/okasa_cctv_c.png" alt="CCTV plan"><figcaption>CCTV layout, third basement</figcaption></figure></div>
+</div></div>
+
+<div id="rosalie" class="case"><div class="w rv">
+<div class="no">CASE STUDY 03</div><h3>Rosalie Hotel: Facade Lighting</h3>
+<div class="chips"><span>Hotel facade</span><span>Architectural lighting</span><span>Design and CAD</span></div>
+<p class="lead">Facade lighting designed for a perforated architectural screen, with linear lighting following the vertical and diagonal edges of the facade.</p>
+<div class="steps"><span>Design concept</span><span>CAD drawing</span><span>Implemented result</span></div>
+<div class="gal"><figure><img src="assets/rosalie_result.jpg" alt="Lit facade at night"><figcaption>Lit facade at night</figcaption></figure><figure><video src="assets/rosalie_walkthrough.mp4" controls playsinline preload="metadata"></video><figcaption>Night walkthrough of the implemented lighting</figcaption></figure></div>
+</div></div>
+
+<div id="knx" class="case alt"><div class="w rv">
+<div class="no">CASE STUDY 04</div><h3>Armada Offices: KNX Smart Building</h3>
+<div class="chips"><span>Makkah and Madinah, Saudi Arabia</span><span>Office buildings</span><span>KNX automation + lighting</span></div>
+<p class="lead">KNX automation and lighting design for two office buildings, with shop drawings, riser diagrams and DIALux lighting reports.</p>
+<div class="two"><div><h4>KNX system</h4><ul><li>KNX bus fed by two power supply units</li><li>Switch actuator groups and presence sensors, with quantities annotated per riser</li><li>Blind actuator wiring for the Madinah office</li></ul></div>
+<div><h4>Deliverables</h4><ul><li>Automation shop drawings</li><li>Lighting shop drawings</li><li>KNX riser diagrams</li><li>DIALux lighting reports</li></ul></div></div>
+<div class="gal"><figure><img src="assets/armada_makkah_riser.png" alt="Makkah KNX riser"><figcaption>Makkah: KNX riser diagram</figcaption></figure><figure><img src="assets/armada_madinah_riser.png" alt="Madinah riser"><figcaption>Madinah: riser diagram</figcaption></figure></div>
+</div></div>
+
+<div id="bim" class="case"><div class="w rv">
+<div class="no">CASE STUDY 05</div><h3>Villa: Revit to Navisworks BIM Workflow</h3>
+<div class="chips"><span>Residential villa</span><span>Electrical BIM</span><span>Revit MEP · Navisworks · ACC</span></div>
+<p class="lead">A full BIM workflow: cloud project setup, worksharing, electrical modeling, schedules and sheets, model export, and Navisworks clash detection with documented before and after reports.</p>
+<div class="steps"><span>ACC project setup</span><span>Worksharing and worksets</span><span>Electrical modeling</span><span>Panel schedules and BOQ</span><span>Sheets: PDF and DWG</span><span>NWC export</span><span>Navisworks sets</span><span>Clash report (before)</span><span>Clash resolution</span><span>Clash report (after)</span></div>
+<div class="gal"><figure><img src="assets/villa_p3.png" alt="Lighting views"><figcaption>Lighting: 2D and 3D views</figcaption></figure><figure><img src="assets/villa_p30.png" alt="Schedules"><figcaption>Schedules and quantities (BOQ)</figcaption></figure></div>
+<h4 style="margin-top:34px">Clash detection: coordination, before, after</h4>
+<div class="gal"><figure><img src="assets/villa_p46.png" alt="Federated model"><figcaption>Coordination: federated model and search sets</figcaption></figure><figure><img src="assets/villa_p47.png" alt="Clash tests"><figcaption>Clash tests and report export (before)</figcaption></figure><figure><img src="assets/villa_p50.png" alt="Report after"><figcaption>Clash report after resolution</figcaption></figure></div>
+<p class="lead" style="margin-top:22px;font-size:16px">Test results: electrical fixtures vs railings, 1 clash, resolved; electrical fixtures vs doors and windows, 5 clashes, resolved (hard clash, 0.001 m tolerance).</p>
+</div></div>
+
+<div id="lighting" class="case alt"><div class="w rv">
+<div class="no">LIGHTING DESIGN</div><h3>Villa Exterior Lighting and DIALux Studies</h3>
+<p class="lead">Exterior lighting concept for a private villa (roof-edge cove lighting, grazing light on the feature wall, framed glazing outlines and landscape uplighting), plus DIALux Evo calculation reports across building types.</p>
+<div class="gal"><figure><video src="assets/villa_exterior_effect.mp4" controls playsinline preload="metadata"></video><figcaption>Villa exterior lighting effect</figcaption></figure></div>
+<h4 style="margin-top:34px">DIALux reports</h4>
 <table>
-<tr><th>Location</th><td>New Administrative Capital, Egypt</td></tr>
-<tr><th>Type</th><td>Mall, multi-level with basements (drawing list runs Basement 3 to Roof)</td></tr>
-<tr><th>My role</th><td>Electrical and low-current designer: drawings, calculations and documentation</td></tr>
-<tr><th>Software</th><td>AutoCAD, ETAP 19.0.1C, Revit MEP</td></tr></table>
-<h3>Workflow evidenced by the files</h3>
-<div class="flow"><span>Architectural coordination*</span><i>→</i><span>Electrical room / shaft planning*</span><i>→</i><span>Lighting + Power</span><i>→</i><span>Mechanical power</span><i>→</i><span>Cable routing</span><i>→</i><span>Load, voltage drop &amp; short circuit (ETAP)</span><i>→</i><span>SLD + panel schedules</span><i>→</i><span>Low current</span><i>→</i><span>Riser diagrams</span><i>→</i><span>Drawing list / submission</span></div>
-<p class="mut">*Early coordination with the architectural team covered electrical room, shaft and service-space requirements.</p>
-<h3>Deliverables in the files</h3>
-<ul>
-<li>Drawing list (EL, EP, EMP, CR, EV, earthing and lightning, PV, LV-SLD-100/101/102, MV-SLD).</li>
-<li>ETAP voltage-drop and short-circuit studies (IEC 60909): 43 buses in the model, 2 two-winding transformers, 1 generator; busway and breaker sizing sheets (example: transformer 2000 kVA, 6% impedance, 4000 A busway).</li>
-<li>Panel schedules with voltage drop and short circuit; electrical room sections (RMU, TR1, TR2); MV routing plan.</li>
-<li>Low current: telecom, CCTV, fire alarm, parking, disabled system, access control, sound system, LC cable routing, and riser diagrams for fire alarm, telecom, sound, parking and access control.</li>
-</ul>
-<figure><img src="assets/x1_lighting_ground_c.png" alt="Ground floor lighting plan"><figcaption>Ground floor lighting plan EL-103.</figcaption></figure>
-<figure><img src="assets/x1_sld_lv100_c.png" alt="LV SLD part 1"><figcaption>LV single line diagram, part 1 (LV-SLD-100).</figcaption></figure>
-<h3>Highlight</h3>
-<p>The package connects the ETAP studies, the SLD and panel schedules, and the low-current risers in one coordinated documentation set, rather than isolated plans.</p>
+<tr><th>Education</th><td>Ghiras Schools: e.g. Canteen 323 lx / Uo 0.4 (target 200 lx / 0.4); Teachers Lounge 496 lx / 0.61 (300 lx / 0.6); Science Lab 501 lx / 0.64 (500 lx / 0.6); Sewing Skills 468 lx / 0.66 (400 lx / 0.6)</td></tr>
+<tr><th>Sports</th><td>Al Yamamah University Stadium</td></tr>
+<tr><th>Offices</th><td>Fursan Gate, Ramz Al-Bea'a, tourism office (office working plane target 300 lx, Uo 0.40)</td></tr>
+<tr><th>Residential</th><td>Four-floor villa, Waseel Farm villa, Al-Rimal villa</td></tr>
+<tr><th>Exterior and facade</th><td>Outdoor restaurant, parking project, residential and commercial tower facade</td></tr></table>
+</div></div>
 
-<h2 id="okasa">Case study 2 — OKASA Mall, New Administrative Capital</h2>
-<table>
-<tr><th>Location</th><td>New Administrative Capital, Egypt</td></tr>
-<tr><th>Type</th><td>Mall; ground plus 3 floors per the calculation note</td></tr>
-<tr><th>My role</th><td>Electrical and low-current designer: drawings, calculations and documentation</td></tr></table>
-<h3>Design basis (from the project calculation note)</h3>
-<ul><li>Total designed load 5,656.1 kVA, fed by three dry-type transformers (2 × 2000 kVA and 1 × 2500 kVA) via three RMUs (2+1, 2+1, 3+1) at 22/0.4 kV.</li>
-<li>1400 kW standby generator serving lighting, EMCC panels for smoke extract and stair pressurization fans, and some lifts, drainage pumps and jockey pump.</li>
-<li>Also in the files: ETAP generator sizing report, lightning protection calculation sheet (IEC), PV SLD and PV report.</li></ul>
-<h3>Deliverables</h3>
-<ul><li>Drawing list: lighting, power, mechanical power, cable routing, earthing and lightning, EV, PV (2 parts), RMU, transformer and MDB room drawings and sections, LV SLD parts 1–3, MV SLD.</li>
-<li>Low current: telecom/data, CCTV, fire alarm (plus fire matrix), access control, parking, disabled, sound, LC cable routing, risers.</li>
-<li>Low-current deliverables checklist: 741 ONT units, 860 CCTV outlets, 741 single-phase smart meters (per checklist).</li></ul>
-<figure><img src="assets/okasa_mvsld_c.png" alt="OKASA MV SLD"><figcaption>MV single line diagram.</figcaption></figure>
-<figure><img src="assets/okasa_cctv_c.png" alt="OKASA CCTV plan"><figcaption>CCTV plan CCTV-100.</figcaption></figure>
-
-<h2 id="rosalie">Case study 3 — Rosalie Hotel Facade Lighting</h2>
-<table><tr><th>Type</th><td>Hotel facade lighting</td></tr>
-<tr><th>My role</th><td>Facade lighting designer (design and CAD)</td></tr></table>
-<div class="flow"><span>Design</span><i>→</i><span>CAD drawing</span><i>→</i><span>Lighting concept</span><i>→</i><span>Final result photo</span></div>
-<figure><img src="assets/rosalie_result.jpg" alt="Facade at night" style="max-height:560px"><figcaption>Night photograph of the lit facade.</figcaption></figure>
-<figure><video src="assets/rosalie_walkthrough.mp4" controls playsinline preload="metadata" style="max-width:100%;max-height:560px"></video><figcaption>Night walkthrough of the implemented facade lighting.</figcaption></figure>
-
-
-<h2 id="knx">Case study 4 — Armada KNX / Smart Building (Makkah and Madinah offices)</h2>
-<p>Presented as one combined case study. Both offices have automation and lighting DWGs, a riser diagram and DIALux reports. </p>
-<ul><li>KNX architecture (Makkah riser): two power supply units (PSU 01, PSU 02) on a KNX bus, switch actuators (SA 01–02 and SA 01–03 groups) and presence sensors, with quantities annotated on the drawing (sensors: 12 and 14; actuators: 2 and 3).</li>
-<li>Madinah: riser drawing and a blind actuator wiring diagram.</li>
-<li>Lighting integration: separate Lighting DWGs and DIALux "OFFICE F2" reports.</li></ul>
-<figure><img src="assets/armada_makkah_riser.png" alt="KNX riser"><figcaption>Makkah KNX riser diagram.</figcaption></figure>
-<figure><img src="assets/armada_madinah_riser.png" alt="Madinah riser"><figcaption>Madinah riser diagram.</figcaption></figure>
-
-<h2 id="bim">Case study 5 — Villa BIM: Revit-to-Navisworks Workflow</h2>
-<table><tr><th>Type</th><td>Residential villa, electrical BIM model</td></tr>
-<tr><th>Software</th><td>Revit MEP, Navisworks, Autodesk Construction Cloud</td></tr></table>
-<div class="flow"><span>ACC setup</span><i>→</i><span>WIP / SHARED</span><i>→</i><span>Worksharing + worksets</span><i>→</i><span>Electrical modeling</span><i>→</i><span>Panel schedules</span><i>→</i><span>Schedules / BOQ</span><i>→</i><span>Sheets PDF + DWG</span><i>→</i><span>NWC export</span><i>→</i><span>Navisworks sets</span><i>→</i><span>Clash before</span><i>→</i><span>Resolution</span><i>→</i><span>Clash after</span></div>
-<p class="mut">Documented views: lighting, power, cable routing, data and telephone, CCTV; panel schedules, schedules and BOQ, sheets, NWC export, sets and clash reports.</p>
-<div class="grid"><figure><img src="assets/villa_p3.png"><figcaption>Lighting 2D / 3D views</figcaption></figure><figure><img src="assets/villa_p30.png"><figcaption>Schedules and BOQ</figcaption></figure></div>
-<h3>Clash detection: before → coordination → after</h3>
-<div class="grid"><figure><img src="assets/villa_p46.png"><figcaption>Coordination: federated model and sets</figcaption></figure><figure><img src="assets/villa_p47.png"><figcaption>Clash tests and report export (before)</figcaption></figure><figure><img src="assets/villa_p50.png"><figcaption>Report after resolution</figcaption></figure></div>
-<p>Test list (last run 3 July 2026): EL FIX vs Railing, 1 clash, resolved; EL FIX vs Doors and Windows, 5 clashes, resolved (hard clash, 0.001 m tolerance).</p>
-
-<h2 id="effect">Villa exterior lighting — effect visualization</h2>
-<p>Exterior lighting concept for a private villa: cove lighting on the roof edges, grazing lights on the feature wall, framed glazing outlines and landscape uplighting.</p>
-<figure><video src="assets/villa_exterior_effect.mp4" controls playsinline preload="metadata" style="max-width:100%"></video><figcaption>Lighting effect video.</figcaption></figure>
-
-<h2 id="dialux">DIALux lighting studies</h2>
-<p>Reports in the files: Ghiras Schools, Al Yamamah University Stadium, Villa (4 floors), Waseel Farm villa, Al-Rimal villa, Fursan Gate office, tourism office, Ramz Al-Bea'a office, parking project, Awtad Al-Fahd outdoor restaurant, Al Rossais tower facade.</p>
-<table><tr><th>Ghiras Schools summary</th><td>Achieved Em / Uo vs target: Canteen 323 lx / 0.4 (target 200 lx / 0.4); Teachers Lounge 496 lx / 0.61 (300 lx / 0.6); Science Lab 01 501 lx / 0.64 (500 lx / 0.6); Sewing Skills 468 lx / 0.66 (400 lx / 0.6).</td></tr></table>
-
-<footer></footer>
-</div></body></html>
+<footer><div class="w"><b>Moaz Hamdy</b> · Electrical MEP Design Engineer · Cairo, Egypt<br><a href="mailto:moazhamdy1112@gmail.com">moazhamdy1112@gmail.com</a> · <a href="https://www.linkedin.com/in/moaz-hamdy112">LinkedIn</a> · <a href="CV_Moaz_Hamdy.pdf">CV (PDF)</a></div></footer>
+<div class="lb" id="lb"><img alt=""></div>
+<script>
+const lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('figure img').forEach(i=>i.addEventListener('click',()=>{li.src=i.src;lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const links=[...document.querySelectorAll('nav.top a')],secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+addEventListener('scroll',()=>{let c=0;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<120)c=i});links.forEach((a,i)=>a.classList.toggle('on',i===c&&scrollY>300))},{passive:true});
+</script>
+</body></html>
