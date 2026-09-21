@@ -18,6 +18,7 @@ a{color:var(--c1)}.w{max-width:1160px;margin:0 auto;padding:0 24px;position:rela
 .bg i:nth-child(2){width:460px;height:460px;background:#3d8080;right:-100px;top:8%;animation-duration:75s;animation-delay:-8s}
 .bg i:nth-child(3){width:520px;height:520px;background:#6a5e8c;left:35%;bottom:-200px;animation-duration:90s;animation-delay:-14s}
 @keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(90px,-70px) scale(1.18)}}
+#fx{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;opacity:.9}
 .grid-bg{position:fixed;inset:0;z-index:-1;background-image:linear-gradient(rgba(160,185,210,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(160,185,210,.035) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at 50% 30%,#000 30%,transparent 80%)}
 /* nav */
 nav.top{position:sticky;top:0;z-index:40;background:rgba(5,11,22,.72);backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid var(--line)}
@@ -90,8 +91,8 @@ footer{border-top:1px solid var(--line);padding:64px 0;font-size:14px;color:var(
 @media(max-width:600px){.hero{padding:84px 0 70px}section,.case{padding:64px 0}nav.top b{display:none}.gal,.sysgrid{grid-template-columns:1fr}}
 @media print{nav.top,.lb{display:none}.rv{opacity:1;transform:none}}
 </style></head><body>
-<div class="bg"><i></i><i></i><i></i></div><div class="grid-bg"></div>
-<nav class="top"><div class="w"><b>MOAZ HAMDY</b><div><a href="#expertise">Profile</a><a href="#x1">X1 Mall</a><a href="#okasa">OKASA Mall</a><a href="#blick">Blick Tower</a><a href="#rosalie">Rosalie Hotel</a><a href="#knx">KNX Offices</a><a href="#bim">Villa BIM</a><a href="#lighting">Lighting</a></div></div></nav>
+<div class="bg"><i></i><i></i><i></i></div><div class="grid-bg"></div><canvas id="fx"></canvas>
+<nav class="top"><div class="w"><b>MOAZ HAMDY</b><div><a href="#expertise">Profile</a><a href="#x1">X1 Mall</a><a href="#okasa">OKASA Mall</a><a href="#rosalie">Rosalie Hotel</a><a href="#knx">KNX Offices</a><a href="#bim">Villa BIM</a><a href="#lighting">Lighting</a></div></div></nav>
 
 <header class="hero"><div class="w">
 <span class="k">Engineering Portfolio</span>
@@ -142,16 +143,8 @@ footer{border-top:1px solid var(--line);padding:64px 0;font-size:14px;color:var(
 <h4 class="sub">Riser diagrams</h4><div class="sysgrid cadshot"><figure><img loading="lazy" src="assets/okasa/riser_fire.jpg" alt="Fire alarm riser"><figcaption>Fire alarm riser</figcaption></figure><figure><img loading="lazy" src="assets/okasa/riser_park.jpg" alt="Parking system riser"><figcaption>Parking system riser</figcaption></figure><figure><img loading="lazy" src="assets/okasa/riser_tele.jpg" alt="Telecom riser"><figcaption>Telecom riser</figcaption></figure><figure><img loading="lazy" src="assets/okasa/riser_acc.jpg" alt="Access control riser"><figcaption>Access control riser</figcaption></figure></div>
 </div></div>
 
-<div id="blick" class="case"><div class="w rv">
-<div class="no">CASE STUDY 03</div><h3>Blick Tower</h3>
-<div class="chips"><span>Multi-level tower with basements and roof</span><span>Electrical + Low Current</span><span>AutoCAD</span></div>
-<p class="lead">Electrical design set for a multi-level tower: lighting, power, cable routing, EV charging and PV, plus low-current systems and PA loop voltage-drop calculations for each floor group.</p>
-<div class="sysgrid"><figure><img loading="lazy" src="assets/cad/blick_lighting.jpg" alt="Lighting"><figcaption>Lighting</figcaption></figure><figure><img loading="lazy" src="assets/cad/blick_power.jpg" alt="Power"><figcaption>Power</figcaption></figure><figure><img loading="lazy" src="assets/cad/blick_cable.jpg" alt="Cable routing"><figcaption>Cable routing</figcaption></figure><figure><img loading="lazy" src="assets/cad/blick_ev.jpg" alt="EV charging"><figcaption>EV charging</figcaption></figure><figure><img loading="lazy" src="assets/cad/blick_pv.jpg" alt="PV system"><figcaption>PV system</figcaption></figure><figure><img loading="lazy" src="assets/cad/blick_sound_vd.jpg" alt="Sound system voltage-drop sheet"><figcaption>Sound system voltage-drop sheet</figcaption></figure></div>
-<p class="lead" style="margin-top:22px;font-size:16px">Low-current drawings in this set: access control, CCTV, disabled system, fire alarm, parking, sound, telecom, LC cable routing and riser diagrams.</p>
-</div></div>
-
 <div id="rosalie" class="case"><div class="w rv">
-<div class="no">CASE STUDY 04</div><h3>Rosalie Hotel: Facade Lighting</h3>
+<div class="no">CASE STUDY 03</div><h3>Rosalie Hotel: Facade Lighting</h3>
 <div class="chips"><span>Hotel facade</span><span>Architectural lighting</span><span>Design, CAD and control system</span></div>
 <p class="lead">Facade lighting designed for a perforated architectural screen, with linear lighting following the vertical and diagonal edges of the facade, and a DMX512 RGBW control system design behind it.</p>
 <div class="steps"><span>Design concept</span><span>CAD drawing</span><span>Control system design</span><span>Implemented result</span></div>
@@ -159,7 +152,7 @@ footer{border-top:1px solid var(--line);padding:64px 0;font-size:14px;color:var(
 </div></div>
 
 <div id="knx" class="case"><div class="w rv">
-<div class="no">CASE STUDY 05</div><h3>KNX Smart Building: Makkah and Madinah Offices</h3>
+<div class="no">CASE STUDY 04</div><h3>KNX Smart Building: Makkah and Madinah Offices</h3>
 <div class="chips"><span>Saudi Arabia</span><span>Office buildings</span><span>KNX automation + lighting</span><span>Schneider KNX devices</span></div>
 <p class="lead">KNX automation and lighting design for two office buildings, with shop drawings, riser diagrams and DIALux lighting reports.</p>
 <div class="two"><div><h4>KNX system</h4><ul><li>KNX bus fed by two power supply units</li><li>Switch actuator groups and presence sensors, with quantities annotated per riser</li><li>Actuator wiring with per-circuit 16 A MCBs and lighting loads</li><li>Blind actuator wiring</li></ul></div>
@@ -171,7 +164,7 @@ footer{border-top:1px solid var(--line);padding:64px 0;font-size:14px;color:var(
 </div></div>
 
 <div id="bim" class="case"><div class="w rv">
-<div class="no">CASE STUDY 06</div><h3>Villa: Revit to Navisworks BIM Workflow</h3>
+<div class="no">CASE STUDY 05</div><h3>Villa: Revit to Navisworks BIM Workflow</h3>
 <div class="chips"><span>Residential villa</span><span>Electrical BIM</span><span>Revit MEP · Navisworks · ACC</span></div>
 <p class="lead">A full BIM workflow: cloud project setup, worksharing, electrical modeling, schedules and sheets, model export, and Navisworks clash detection with documented before and after reports.</p>
 <div class="steps"><span>ACC project setup</span><span>Worksharing and worksets</span><span>Electrical modeling</span><span>Panel schedules and BOQ</span><span>Sheets: PDF and DWG</span><span>NWC export</span><span>Navisworks sets</span><span>Clash report (before)</span><span>Clash resolution</span><span>Clash report (after)</span></div>
@@ -203,6 +196,26 @@ footer{border-top:1px solid var(--line);padding:64px 0;font-size:14px;color:var(
 <footer><div class="w"><b>Moaz Hamdy</b><br>Electrical MEP Design Engineer · Cairo, Egypt<br><a href="mailto:moazhamdy1112@gmail.com">moazhamdy1112@gmail.com</a> · <a href="https://www.linkedin.com/in/moaz-hamdy112">LinkedIn</a> · <a href="CV_Moaz_Hamdy.pdf">CV (PDF)</a></div></footer>
 <div class="lb" id="lb"><img alt=""></div>
 <script>
+
+(function(){const c=document.getElementById('fx');if(!c||matchMedia('(prefers-reduced-motion:reduce)').matches)return;const g=c.getContext('2d');let W,H,D=Math.min(devicePixelRatio||1,2),paths=[],pulses=[];
+const STEP=64,cols=['134,197,193','127,149,184','216,184,120'];
+function build(){W=innerWidth;H=innerHeight;c.width=W*D;c.height=H*D;g.setTransform(D,0,0,D,0,0);paths=[];pulses=[];
+ const n=Math.round(W*H/52000);
+ for(let i=0;i<n;i++){let x=Math.round(Math.random()*W/STEP)*STEP,y=Math.round(Math.random()*H/STEP)*STEP,pts=[[x,y]],dir=Math.random()<.5?0:1;
+  const segs=3+Math.floor(Math.random()*5);
+  for(let k=0;k<segs;k++){const len=(1+Math.floor(Math.random()*4))*STEP*(Math.random()<.5?-1:1);if(dir)y+=len;else x+=len;pts.push([x,y]);dir^=1}
+  let L=0;const cum=[0];for(let k=1;k<pts.length;k++){L+=Math.abs(pts[k][0]-pts[k-1][0])+Math.abs(pts[k][1]-pts[k-1][1]);cum.push(L)}
+  const col=cols[i%3];paths.push({pts,cum,L,col});
+  pulses.push({p:paths.length-1,t:Math.random()*L,v:.35+Math.random()*.5})}}
+function at(P,t){const{pts,cum}=P;let k=1;while(k<cum.length-1&&cum[k]<t)k++;const a=pts[k-1],b=pts[k],f=(t-cum[k-1])/(cum[k]-cum[k-1]||1);return[a[0]+(b[0]-a[0])*f,a[1]+(b[1]-a[1])*f]}
+function draw(){g.clearRect(0,0,W,H);g.lineWidth=1;g.lineJoin='round';
+ for(const P of paths){g.strokeStyle='rgba('+P.col+',.10)';g.beginPath();P.pts.forEach((q,i)=>i?g.lineTo(q[0],q[1]):g.moveTo(q[0],q[1]));g.stroke();
+  for(const q of [P.pts[0],P.pts[P.pts.length-1]]){g.fillStyle='rgba('+P.col+',.22)';g.fillRect(q[0]-2,q[1]-2,4,4)}}
+ for(const u of pulses){const P=paths[u.p];u.t+=u.v;if(u.t>P.L)u.t=0;
+  for(let k=0;k<14;k++){const tt=u.t-k*3;if(tt<0)continue;const[x,y]=at(P,tt);g.fillStyle='rgba('+P.col+','+(0.55*(1-k/14)).toFixed(3)+')';g.beginPath();g.arc(x,y,2.2*(1-k/22),0,7);g.fill()}}
+ requestAnimationFrame(draw)}
+build();draw();let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(build,200)});})();
+
 const lb=document.getElementById('lb'),li=lb.querySelector('img');
 document.querySelectorAll('figure img,.pc img').forEach(i=>i.addEventListener('click',()=>{li.src=i.src;lb.classList.add('on')}));
 lb.addEventListener('click',()=>lb.classList.remove('on'));
